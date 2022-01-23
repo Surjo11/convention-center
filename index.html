@@ -5,15 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wedding Venue</title>
+
     <!-- Bootstrap Css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Vanila Css -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
 
 <body>
+    <!------------------------ 
+        Navigation Section 
+    -------------------------->
     <header class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -21,7 +29,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <h6 class="navbar-toggler-icon"></h6>
                 </button>
                 <div class="collapse navbar-collapse fw-bold" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mt-4 mb-lg-0">
@@ -43,8 +51,10 @@
         </nav>
 
     </header>
-
-    <section>
+    <!-------------------- 
+        Banner Section
+     --------------------->
+    <section class="pb-5">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -57,7 +67,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./images/banner.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-md-block">
                         <h1 class="fw-bold">Welcome To Spectra The Convention Center</h1>
                         <h5>The Perfect Venue for your next event</h5>
                         <p>The Spectra venue is welcoming with neutral colors and hedges at the entrance. Inside, the
@@ -66,8 +76,8 @@
                             allow sweeping vistas of the Tri-Valley below. Double doors lead to an outdoor patio, with
                             decorative light posts, roses and unobstructed views during the day with glimmering city
                             lights visible at night.</p>
-                        <a class="btn btn-light btn-sm" href="http://scc.com.bd/" target="_blank"
-                            rel="noopener noreferrer">Book Now</a>
+                        <a class="btn btn-light btn-lg" href="http://scc.com.bd/" target="_blank"
+                            rel="noopener noreferrer">Book Now <i class="bi bi-bag"></i></i></a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -79,34 +89,103 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <h6 class="carousel-control-prev-icon" aria-hidden="true"></h6>
+                <h6 class="visually-hidden">Previous</h6>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <h6 class="carousel-control-next-icon" aria-hidden="true"></h6>
+                <h6 class="visually-hidden">Next</h6>
             </button>
         </div>
         <!-- Toast -->
-        <div class="toast fade show ms-auto">
+        <div class="toast fade show ms-md-auto">
             <div class="toast-header bg-light">
                 <strong class="me-auto"><i class="bi-gift-fill"></i> Grab 30% off on first booking</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
             </div>
         </div>
     </section>
+    <!----------------------- 
+        Packages Section
+     ------------------------>
+    <section class="container mt-5">
+        <h1 class="mb-5 fw-bold text-center">Our Packages</h1>
+        <div class="row row-cols-1 g-4">
+            <div class="col-12 col-lg-3 mt-5">
+                <div class="shadow-sm p-3 mb-5 bg-body rounded h-100">
+                    <h1>$3000</h1>
+                    <h2>Bussiness Fair</h2>
+                    <p>For most businesses event
+                        like book fair, craft fair.</p>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Limited Space Access</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Secuirty Facility</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Event Support</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Decoration Design</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Per day Bill</h6>
+                    <div class="text-center mt-3    ">
+                        <button type="button" class="btn-pack">Choose Plan</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 mt-5">
+                <div class="shadow-sm p-3 mb-5 bg-body rounded h-100">
+                    <h1>$5000</h1>
+                    <h2>Wedding Basic</h2>
+                    <p>For weddings with basic plan
+                        and limited item</p>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Full space access</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Food Arrangement</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Mangement Support</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Decoration design</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Billed as shift</h6>
+                    <div class="text-center mt-3    ">
+                        <button type="button" class="btn-pack">Choose Plan</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="shadow p-3 mb-5 bg-info text-white h-100 rounded-3 p-3 position-relative">
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">Hot</span>
+                    <h1>$10000</h1>
+                    <h2>Wedding Plus</h2>
+                    <p>For most weddings with premium plans</p>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Full Space Access</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Dedicated Team</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Buffet Food</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Premium Decoration</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Pay as Plan</h6>
+                    <div class="text-center mt-3    ">
+                        <button type="button" class="btn-pack">Choose Plan</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 mt-5">
+                <div class="shadow-sm p-3 mb-5 bg-body rounded h-100">
+                    <h1>$20000</h1>
+                    <h2>Corporate Event</h2>
+                    <p>For most corporate business
+                        events</p>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Full Apace Access</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Secuirty Facility</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Dedicated Team</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Premium Decoration</h6>
+                    <h6 class="fw-normal"><i class="bi bi-check-circle-fill"></i> Pay as Plan</h6>
+                    <div class="text-center mt-3    ">
+                        <button type="button" class="btn-pack">Choose Plan</button>
+                    </div>
+                </div>
+            </div>
 
-    <section>
-
-        
-
+        </div>
     </section>
 
     <!-- Javascript Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    
     <!-- Toast Script -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {

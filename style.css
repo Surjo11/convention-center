@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.btn-pack{
+    border: none;
+    color: white;
+    background-color: rgba(236, 105, 127, 0.767);
+    padding: 15px;
+    width: 200px;
+    border-radius: 25px;
+}
