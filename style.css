@@ -2,13 +2,17 @@
     margin: 0;
     padding: 0;
 }
-.btn-pack{
+.btn-pack {
     border: none;
-    color: white;
-    background-color: rgba(236, 105, 127, 0.767);
+    color: black;
+    background-color: rgba(58, 66, 102, 0.295);
     padding: 15px;
     width: 200px;
     border-radius: 25px;
+}
+
+.foot-head{
+    color: rgba(255, 101, 126, 0.897);
 }
 
 /*---------------- 
