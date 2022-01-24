@@ -34,16 +34,16 @@
                 <div class="collapse navbar-collapse fw-bold" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mt-4 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#product">Product</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Packages</a>
+                            <a class="nav-link" href="#packages">Packages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#contact">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -54,7 +54,7 @@
     <!-------------------- 
         Banner Section
      --------------------->
-    <section class="pb-5">
+    <section id="home" class="pb-5">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -106,11 +106,46 @@
             </div>
         </div>
     </section>
+    <!------------------------- 
+        Product/Bonus Section
+     -------------------------->
+    <section id="product" class="container mt-5 pb-5 position-relative">
+        <h1 class="fw-bold text-center mb-5">Products</h1>
+        <div class="card-group">
+            <div class="card border-light">
+             <div class="card-photo"> <img src="./images/album-1.png" class="card-img-top" alt="..."></div>
+              <div class="card-body text-center">
+                <h2 class="card-title">Rings</h2>
+                <p class="card-text"> We give great consideration to fonts, ring widths spacing and the final polish to ensure gleaming results</p>
+                <button class="btn-pack" role="button">Shop Now <i class="bi bi-cart"></i> </button>
+                <h1 class="offer">15% OFF!</h1>
+              </div>
+            </div>
+            <div class="card border-light">
+            <div class="card-photo"><img src="./images/album-2.png" class="card-img-top" alt="..."></div>
+              <div class="card-body text-center">
+                <h2 class="card-title">Dresses</h2>
+                <p class="card-text">Wide collection of styles with over 100 international fashion brands.We provide the best experience.</p>
+                <button class="btn-pack" role="button">Shop Now <i class="bi bi-cart"></i> </button>
+                <h1 class="offer">25% OFF!</h1>
+              </div>
+            </div>
+            <div class="card border-light">
+              <div class="card-photo"><img src="./images/album-3.png" class="card-img-top" alt="..."></div>
+              <div class="card-body text-center">
+                <h2 class="card-title">Shoes</h2>
+                <p class="card-text">For quality, trendy wide, extra wide and big fitting shoes. Half sizes. From size 4 to 46</p>
+                <button class="btn-pack" role="button">Show Now <i class="bi bi-cart"></i> </button>
+                <h1 class="offer">40% OFF!</h1>
+              </div>
+            </div>
+          </div>
+    </section>
     <!----------------------- 
         Packages Section
      ------------------------>
-    <section class="container mt-5 pb-5">
-        <h1 class="mb-5 fw-bold text-center">Our Packages</h1>
+    <section id="packages" class="container mt-5 pb-5">
+        <h1 class="mb-5 fw-bold text-center">Packages</h1>
         <div class="row row-cols-1 g-4">
             <div class="col-12 col-md-6 col-lg-3 mt-5">
                 <div class="shadow-sm p-3 mb-5 bg-body rounded h-100">
@@ -259,7 +294,7 @@
      --------------------->
     <footer class="bg-black text-white w-100 h-100 p-5">
         <section class="container d-flex justify-content-between flex-wrap flex-md-nowrap">
-            <div>
+            <div id="contact">
                 <h2 class="foot-head">Contact</h2>
                 <h4><i class="bi bi-person-square"></i> AAS Surjo</h4>
                 <h6><i class="bi bi-telephone-fill"></i> Hotline- 01771842603</h6>
